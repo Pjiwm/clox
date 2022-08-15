@@ -1,3 +1,8 @@
 {
-    "C_Cpp.errorSquiggles": "EnabledIfIncludesResolve"
+    "C_Cpp.errorSquiggles": "EnabledIfIncludesResolve",
+    "files.associations": {
+        "limits": "c",
+        "type_traits": "c",
+        "value.h": "c"
+    }
 }

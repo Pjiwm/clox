@@ -1,1 +1,3 @@
-src/main
+src/*
+!src/*.c
+!src/*.h
