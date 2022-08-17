@@ -3,6 +3,7 @@
     "files.associations": {
         "limits": "c",
         "type_traits": "c",
-        "value.h": "c"
+        "value.h": "c",
+        "scanner.h": "c"
     }
 }
