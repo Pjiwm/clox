@@ -4,7 +4,8 @@
         "limits": "c",
         "type_traits": "c",
         "value.h": "c",
-        "scanner.h": "c"
+        "scanner.h": "c",
+        "typeinfo": "c"
     },
     "editor.tabSize": 2
 }
