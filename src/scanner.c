@@ -221,6 +221,6 @@ Token scanToken() {
     case '"':
       return string();
   }
-  printf("\n->%c\n",c);
+  
   return errorToken("Unexpected character.");
 }
