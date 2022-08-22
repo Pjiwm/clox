@@ -5,7 +5,8 @@
         "type_traits": "c",
         "value.h": "c",
         "scanner.h": "c",
-        "typeinfo": "c"
+        "typeinfo": "c",
+        "stdbool.h": "c"
     },
     "editor.tabSize": 2
 }
