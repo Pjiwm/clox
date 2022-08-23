@@ -103,7 +103,7 @@ static void emitReturn() { emitByte(OP_RETURN); }
 static uint8_t makeConstant(Value value) {
   int constant = addConstant(currentChunk(), value);
   if (constant > UINT8_MAX) {
-    error("Too many constatns in one chunk");
+    error("Too many constants in one chunk");
     return 0;
   }
 
@@ -161,7 +161,7 @@ static void grouping() {
 
 static void number() {
   double value = strtod(parser.previous.start, NULL);
-  emitConstant(value);
+  emitConstant(NUMBER_VAL(value));
 }
 
 static void unary() {
@@ -179,6 +179,7 @@ static void unary() {
       return;
   }
 }
+// Pratt parser
 ParseRule rules[] = {
     [TOKEN_LEFT_PAREN] = {grouping, NULL, PREC_NONE},
     [TOKEN_RIGHT_PAREN] = {NULL, NULL, PREC_NONE},
