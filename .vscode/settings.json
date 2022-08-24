@@ -9,7 +9,8 @@
         "stdbool.h": "c",
         "common.h": "c",
         "stddef.h": "c",
-        "compiler.h": "c"
+        "compiler.h": "c",
+        "memory.h": "c"
     },
     "editor.tabSize": 2
 }
