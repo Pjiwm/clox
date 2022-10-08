@@ -19,6 +19,7 @@ void initTable(Table* table);
 void freeTable(Table* table);
 bool tableSet(Table* table, ObjString* key, Value value);
 bool tabletGet(Table* table, ObjString* key, Value* value);
+bool tableDelete(Table* table, ObjString* key);
 void tableAddAll(Table* from, Table* to);
 
 #endif
