@@ -42,7 +42,6 @@ static Entry* findEntry(Entry* entries, int capacity, ObjString* key) {
     index = (index + 1) % capacity;
   }
 }
-
 bool tableGet(Table* table, ObjString* key, Value* value) {
   if (table->count == 0) return false;
 
