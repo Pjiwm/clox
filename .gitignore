@@ -2,3 +2,4 @@ src/*
 !src/*.c
 !src/*.h
 src/main
+*.lox

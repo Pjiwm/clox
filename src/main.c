@@ -13,10 +13,9 @@ static void repl() {
     printf("> ");
 
     if (!fgets(line, sizeof(line), stdin)) {
-      printf("\n");
+      printf("XXXXX\n");
       break;
     }
-
     interpret(line);
   }
 }
