@@ -13,7 +13,6 @@ static void repl() {
     printf("> ");
 
     if (!fgets(line, sizeof(line), stdin)) {
-      printf("XXXXX\n");
       break;
     }
     interpret(line);
